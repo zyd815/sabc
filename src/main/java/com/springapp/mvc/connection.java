@@ -26,6 +26,7 @@ public class connection {
             System.out.println("数据库连接失败！");
             se.printStackTrace() ;
         }
+        System.out.println("hhhh");
     }
 
 }
