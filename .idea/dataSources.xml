@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2544981340">
+    <data-source source="LOCAL" name="Sybase - ftzmiss@10.6.1.178 [2]" uuid="eb19355b-fdf6-4769-95d2-b5c1c325f540">
+      <driver-ref>sybase.ase</driver-ref>
+      <jdbc-driver>com.sybase.jdbc4.jdbc.SybDriver</jdbc-driver>
+      <jdbc-url>jdbc:sybase:Tds:10.6.1.178:4200/ftzmiss</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://C:/jconn3.jar</url>
+        </library>
+        <library>
+          <url>file://C:/jconn4.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="sabc:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="sabc.war">
+      <element id="artifact" artifact-name="sabc:war exploded" />
+    </root>
+  </artifact>
+</component>
