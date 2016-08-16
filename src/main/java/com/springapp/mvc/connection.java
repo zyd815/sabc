@@ -1,5 +1,8 @@
 package com.springapp.mvc;
 
+import com.springapp.mvc.service.TestService;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -8,7 +11,11 @@ import java.sql.SQLException;
  * Created by ABCDC on 2016/8/15.
  */
 public class connection {
+
+    @Autowired static TestService testService;
+
     public static void main(String [] args){
+        /*
         try{
             //加载MySql的驱动类
 //            Class.forName("com.sybase.jdbc3.jdbc.SybDriver") ;
@@ -28,6 +35,8 @@ public class connection {
             System.out.println("数据库连接失败！");
             se.printStackTrace() ;
         }
+        */
+        testService.sayHello();
         System.out.println("hhhh");
     }
 

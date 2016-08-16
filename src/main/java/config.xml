@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <classPathEntry location="C:\jconn3.jar" />
+    <context id="MySQL" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+        <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://121.40.185.114:3306/site" userId="lidian" password="LiDian2014">-->
+        <jdbcConnection driverClass="com.sybase.jdbc3.jdbc.SybDriver" connectionURL="jdbc:sybase:Tds:10.6.1.178:4200/ftzmiss" userId="ftzmiss" password="kfrbftzmiss">
+        </jdbcConnection>
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+        <javaModelGenerator targetPackage="com.springapp.mvc.model" targetProject="C:\Users\ABCDC\IdeaProjects\sabc\src\main\java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <sqlMapGenerator targetPackage="com.springapp.mvc.dao" targetProject="C:\Users\ABCDC\IdeaProjects\sabc\src\main\java">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.springapp.mvc.dao" targetProject="C:\Users\ABCDC\IdeaProjects\sabc\src\main\java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <table tableName="classinfo" />
+
+    </context>
+</generatorConfiguration>
